@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billings</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8b767af9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about">About</a></li>
+                
+                <li>
+                    <a href="#">Major Cities</a>
+                    <ul class="dropdown">
+                        <li><a href="/pages/billings/index.html">Billings</a></li>
+                        <li><a href="/pages/mossoula/index.html">Mossoula</a></li>
+                        <li><a href="/pages/greatFalls/index.html">Great Falls</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="logo"><a href="/index.html">
+                    <img src="./img/Green Mountain Icon.png" alt="mountain icon" width="50px" height="50px">
+                    Montana</a></li>
+                <li class="hideOnMobile">
+                    <a href="#"> Major Cities</a>
+                    <ul class="dropdown">
+                        <li><a href="/pages/billings/index.html">Billings</a></li>
+                        <li><a href="/pages/mossoula/index.html">Mossoula</a></li>
+                        <li><a href="/pages/greatFalls/index.html">Great Falls</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnDesktop"  onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="grid">
+        <h2 class="h2-title">Billings</h2>
+    <div class="carousel">
+        <button class="carousel_button carousel_button-left">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+         </button>
+        <div class="carousel_track-cont">
+            <ul class="carousel_track">
+                <li class="carousel-slide current-slide">
+                    <img class="carousel-img" src="./img/billings-image 1.jpeg" alt="Billing city scape" >
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-img" src="./img/billingImage2.jpg" alt="Yelllow Stone Art Museum">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-img" src="./img/billingImage3.jpg" alt="Pictograph Cave State Park">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel_button carousel_button-right">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </button>
+    
+    </div>
+    <article class="articleBtm" id="about">
+        <h2 class="city-h2">About Billings</h2>
+        <p class="text">
+            Billings is the largest city in Montana, with a population of 117,116 as of the 2020 census. It is located in the south-central portion of the state and serves as the seat of Yellowstone County . The city is also the principal city of the Billings Metropolitan Area, which has a population of 184,167 .
+        </p>
+    </br>   
+        <p>
+            Billings was founded in 1882 as a railroad town and was named after Frederick H. Billings, the former president of the Northern Pacific Railroad . The city was nicknamed the “Magic City” because of its rapid growth 1. The nearby Crow and Cheyenne peoples called the city Ammalapáshkuua and É'êxováhtóva, respectively, meaning “where they cut wood,” named as such because of a sawmill built in the area by early white settlers .
+        </p>
+        <br>
+        <p>
+            Billings has experienced rapid growth and maintains a strong economy. From 1969 to 2021, the Billings area population growth was 89%, compared to Montana's overall increase of 59%. The city avoided the economic downturn that affected most of the nation from 2008 to 2012 as well as the housing bust. With more hotel accommodations than any area within a five-state region, the city hosts a variety of conventions, concerts, sporting events, and other rallies.
+        </p>
+        <br>
+        <p>
+            The citys economy is driven by several industries, including healthcare, retail, and energy. The healthcare industry is the largest employer in the city, with Billings Clinic and St. Vincent Healthcare being the two largest hospitals in the region. The retail industry is also a significant contributor to the city's economy, with Rimrock Mall being the largest shopping center in Montana. The energy industry is also a significant contributor to the city's economy, with the Bakken oil development and the Heath Shale oil discovery north of Billings. The city is also home to Montana State University Billings, which offers undergraduate and graduate programs in various fields .
+        </p>
+         <br>   
+        <p>    
+            In terms of future economic direction, the city is looking to expand its technology sector and attract more high-tech companies to the area. The city is also looking to expand its tourism industry by promoting its natural beauty and outdoor recreational opportunities. The city is also investing in infrastructure projects, such as the One Big Sky Center, which is a proposed mixed-use development that would include a convention center, hotel, and retail space. The city is also investing in renewable energy projects, such as the Billings Solar Project, which is a proposed 20-megawatt solar farm that would provide electricity to the city
+        </p>
+    </article>
+    </section>
+    <footer>
+        <div>
+            <h2>ADVENTURE AWAITS</h2>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram" ></i>
+            <i class="fa-brands fa-square-facebook" ></i>
+            <i class="fa-brands fa-square-x-twitter" ></i>
+
+        </div>
+        <div>
+            <p> 
+                &#169; L.S Design ALL RIGHTS RESERVED 
+            </p>
+        </div>
+    </footer>
+    <script src="../index.js"></script>
+     </body>
+        

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8b767af9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a id="contact-mobile" href="#">Contact Us</a></li>
+                <li>
+                    <a href="#">Major Cities</a>
+                    <ul class="dropdown">
+                        <li><a href="/pages/billings/index.html">Billings</a></li>
+                        <li><a href="/pages/mossoula/index.html">Mossoula</a></li>
+                        <li><a href="/pages/greatFalls/index.html">Great Falls</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="logo"><a href="/index.html">
+                    <img src="./img/Green Mountain Icon.png" alt="mountain icon" width="50px" height="50px">
+                    Montana</a></li>
+                <li class="hideOnMobile">
+                    <a href="#"> Major Cities</a>
+                    <ul class="dropdown">
+                        <li><a href="/pages/billings/index.html">Billings</a></li>
+                        <li><a href="/pages/mossoula/index.html">Mossoula</a></li>
+                        <li><a href="/pages/greatFalls/index.html">Great Falls</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="#about" >About</a></li>
+                <li id="contact-us" class="hideOnMobile"><a href="#">Contact Us</a></li>
+                <li class="hideOnDesktop"  onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <div class="popup">
+            <h1 class="contact-header">Contact Us</h1>
+            <div class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            <form id="form" action="/" method="get">
+            <div class="form">
+                <div id="message"></div>
+                <div class="form-element">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="Madison">
+                </div>
+                <div class="form-element">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Hunts">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Doe@xmail.com">
+                </div>
+                <div class="form-element">
+                    <label for="email"> Confirm Email</label>
+                    <input type="email" id="cnfrmEmail" placeholder="Doe@xmail.com">
+                </div>
+                <div class="form-element">
+                    <textarea id="message" rows="10" placeholder="What is your message"></textarea>
+                </div>
+                <div class="form-element">
+                    <p> To receiveThe Montana Monthly check the box</p>
+                    <input type="checkbox" id="newsLetter">
+                    <label for="newsLetter">Montana News</label>
+                </div>
+                <div class="form-element">
+                    <input type="submit" id="submit" value="SUBMIT" onclick="emailCheck()">
+            
+                </div>
+            </div>
+            </form>
+            
+        </div>
+    </header>
+    <main>
+        <div class="h-cont">
+            <h1>Welcome to Big Sky Country</h1>
+        </div>
+    </main>
+    <section class="grid">
+        <div class="article">
+            <article id="about">
+                <h2>About</h2>
+                <p class="text">
+                    Montana is a state located in the northwestern region of the United States. As of 2022, the population of Montana was estimated to be around 1,122,867 people . The state is the fourth largest in the country and is bordered by North Dakota, South Dakota, Wyoming, Idaho, and Canada. Montana is known for its diverse geography, which includes the Rocky Mountains, the Great Plains, and the Missouri River. The state is home to several national parks, including Glacier National Park and Yellowstone National Park.
+                </p>
+            </br>
+                <p>
+                    Montana has a diverse economy, with industries such as agriculture, mining, and tourism playing a significant role in the state's economic growth. According to the US Census Bureau, the median household income in Montana was $60,560 in 2021, while the average household income was $82,237. The per capita income in Montana was $34,423 in 2021 . Montana's economy has been growing at a steady pace, with the state's per capita personal income growing by 8.5% in 2021, faster than the national growth rate of 7.4%.
+                </p>
+            </br>
+                <p>
+                    In conclusion, Montana is a state with a diverse geography and economy. The state's population is estimated to be around, 122,867 people, and it is home to several national parks, including Glacier National Park and Yellowstone National Park. Montana's economy is driven by industries such as agriculture, mining, and tourism, and the state's per capita personal income has been growing at a steady pace. The median household income in Montana was $60,560 in 2021, while the average household income was $82,237. 
+                </p>
+            
+            </article>
+        </div>
+        <aside class="aside">
+           <h2>Fun Facts</h2>
+            <ul class="ul">
+                <li>
+                    Montana has more cows than people. The cow population is about 2.6 million, while the human population is around 1 million
+                </li>
+                <li>
+                    Montana is home to over 8,000 moose and has the largest migratory elk herd in the United States 
+                </li>
+                <li>
+                    Montana's Museum of the Rockies holds one of the largest dinosaur fossil collections in the world
+                </li>
+                    
+                <li>
+                    Giant Springs, Montana is home to the largest freshwater spring in the U.S
+                </li>
+                <li>
+                    Montana holds the world record for the greatest temperature change in 24 hours. On January 14-15, 1972, the temperature went from -54°F to 49°F, a whopping 103 degrees in Loma!
+                </li>
+                <li>
+                    In Helena, Montana it is illegal to throw an item across a street
+                </li>
+                <li>
+                    The Montana Yogo Sapphire is the only North American gem to be included in the Crown Jewels of England 
+                </li>
+                <li>
+                    In 1888 Helena had more millionaires per capita than any other city in the world 
+                </li>
+            </ul>
+        </aside>
+        <div class="table">
+            <table>
+                <caption>
+                    <h2>Major Cities</h2>
+                </caption>
+                <tr>
+                    <th>Name</th>
+                    <th>incorporated</th>
+                    <th>population</th>
+                    <th>region</th>
+                    <th>City Type</th>
+                    <th>Avg Income</th>
+                </tr>
+                <tr>
+                    <td data-cell="name"><button> <a href="../pages/billings/index.html">Billings</a></button></td>
+                    <td data-cell="date">1885</td>
+                    <td data-cell="population">118,288</td>
+                    <td data-cell="region">South-Central Region</td>
+                    <td data-cell="type">First Class City</td>
+                    <td data-cell="income">$60,560</td>
+                </tr>
+                <tr>
+                    <td data-cell="name"><button><a href="../pages/mossoula/index.html">Missoula</a></button></td>
+                    <td data-cell="date">1885</td>
+                    <td data-cell="population">76,599</td>
+                    <td data-cell="region">Western Region</td>
+                    <td data-cell="type">Home Rule City</td>
+                    <td data-cell="income">$60,560</td>
+                </tr>
+                <tr>
+                    <td data-cell="name"><button><a href="../pages/greatFalls/">Great Falls</a></button></td>
+                    <td data-cell="date">1888</td>
+                    <td data-cell="population">60,369</td>
+                    <td data-cell="region">Northern-Central Region</td>
+                    <td data-cell="type">First Class Citty</td>
+                    <td data-cell="income">$60,560</td>
+                </tr>
+
+            </table>
+            
+        </div>
+        <div class="orderedList">
+            <h2>Top 10 Tourist Attractions</h2>
+            <ol class="ol">
+                <li>Glacier National Park</li>
+                <li>Yellow Stone National Park</li>
+                <li>Lewis & Clark Trail</li>
+                <li>Little Bighorn Battlefield National Monument</li>
+                <li>Museum of the Rockies</li>
+                <li>Lake McDonal</li>
+                <li>Montan Historical Society Museum</li>
+                <li>Montana State Cappital</li>
+                <li>Beartoth Highway</li>
+                <li>Going-to-the-Sun Road</li>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>ADVENTURE AWAITS</h2>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram" ></i>
+            <i class="fa-brands fa-square-facebook" ></i>
+            <i class="fa-brands fa-square-x-twitter" ></i>
+
+        </div>
+        <div>
+            <p> 
+                &#169; L.S Design ALL RIGHTS RESERVED 
+            </p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
